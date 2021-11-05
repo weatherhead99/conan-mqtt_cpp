@@ -24,7 +24,7 @@ class MQTTcppConan(ConanFile):
         cmake.patch_config_paths()
 
     def package_info(self):
-        self.cpp_info.builddirs.append("lib")
+        self.cpp_info.builddirs.append("lib/cmake")
         
     def package_id(self):
         self.info.header_only()
